@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node index.ts"
+    "dev": "tsx index.ts"
   },
   "bin": {
-    "tauecli": "ts-node ./bin/taue-cli.ts"
+    "tauecli": "./src/bin/taue-cli.js"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,7 @@
     "commander": "^12.1.0",
     "inquirer": "^9.2.23",
     "shelljs": "^0.8.5",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.16.0",
     "typescript": "^5.4.5",
     "yargs": "^17.7.2",
     "zx": "^8.1.3"
