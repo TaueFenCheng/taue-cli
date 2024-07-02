@@ -1,12 +1,25 @@
 {
-  "name": "react18-with-router",
+  "name": "rspack-react-ts-starter",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development rspack serve",
+    "build": " cross-env NODE_ENV=production rspack build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "6"
+  },
+  "devDependencies": {
+    "@rspack/cli": "1.0.0-alpha.0",
+    "@rspack/core": "1.0.0-alpha.0",
+    "@rspack/plugin-react-refresh": "1.0.0-alpha.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "react-refresh": "^0.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
 }
